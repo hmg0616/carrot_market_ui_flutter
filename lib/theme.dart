@@ -3,9 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 ThemeData theme() {
   return ThemeData(
-      scaffoldBackgroundColor: Colors.white,
-      textTheme: textTheme(),
-      appBarTheme: appTheme()
+    scaffoldBackgroundColor: Colors.white,
+    textTheme: textTheme(),
+    appBarTheme: appTheme(),
+    primaryColor: Colors.orange // 앱의 브랜드 색상 설정
   );
 }
 
