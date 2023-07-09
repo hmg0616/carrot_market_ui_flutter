@@ -17,14 +17,16 @@ class ImageContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect( // 이미지 모서리에 곡선 효과를 주기 위해 사용
-      borderRadius: BorderRadius.circular(borderRadius),
-      child: Image.network(
-        imageUrl,
-        width: width,
-        height: height,
-        fit: BoxFit.cover,
-      ),
+    return SizedBox(
+      width: width,
+      height: height,
+      child: ClipRRect( // 이미지 모서리에 곡선 효과를 주기 위해 사용
+        borderRadius: BorderRadius.circular(borderRadius),
+        child: Image.network(
+          imageUrl,
+          fit: BoxFit.cover,
+        ),
+      )
     );
   }
 }
