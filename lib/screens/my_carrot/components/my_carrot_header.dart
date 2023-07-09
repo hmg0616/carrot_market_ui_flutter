@@ -6,7 +6,7 @@ class MyCarrotHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card( // 입체감과 모서리에 곡선이 필요한 위젯을 만들 때 사용하는 위젯. 위젯 크기는 지정할 수 없고 부모 위젯의 제약과 자식 위젯 크기에 따라 결정됨. 기본적으로 margin을 가지고 있음.
-      elevation: 0.5, // 음영? 그림자?
+      elevation: 0.5, // 음영
       margin: EdgeInsets.zero,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0.0)),
       child: Padding( // padding 지정
