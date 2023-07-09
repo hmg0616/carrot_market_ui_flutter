@@ -50,12 +50,12 @@ class ProductDetail extends StatelessWidget {
     );
   }
 
-  numberFormat(String price) {
+  String numberFormat(String price) {
     final formatter = NumberFormat('#,###');
     return formatter.format(int.parse(price));
   }
 
-  _buildIcons(int count, IconData iconData) {
+  Widget _buildIcons(int count, IconData iconData) {
     return Row(
       children: [
         Icon(iconData, size: 14.0),
