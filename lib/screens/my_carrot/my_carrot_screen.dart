@@ -1,6 +1,9 @@
 import 'package:carrot_market_ui/screens/my_carrot/components/my_carrot_header.dart';
 import 'package:flutter/material.dart';
 
+import '../../models/icon_menu.dart';
+import 'components/card_icon_menu.dart';
+
 class MyCarrotScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -20,11 +23,11 @@ class MyCarrotScreen extends StatelessWidget {
         children: [
           MyCarrotHeader(),
           const SizedBox(height: 8.0),
-          //CardIconMenu(iconMenuList: iconMenu1),
+          CardIconMenu(iconMenuList: iconMenu1),
           const SizedBox(height: 8.0),
-          //CardIconMenu(iconMenuList: iconMenu2),
+          CardIconMenu(iconMenuList: iconMenu2),
           const SizedBox(height: 8.0),
-          //CardIconMenu(iconMenuList: iconMenu3),
+          CardIconMenu(iconMenuList: iconMenu3),
         ],
       ),
     );
