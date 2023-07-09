@@ -25,6 +25,7 @@ AppBarTheme appTheme() {
     centerTitle: false,
     color: Colors.white,
     elevation: 0.0,
-    titleTextStyle: textTheme().headline6,
+    titleTextStyle: textTheme().headline2,
+    iconTheme: IconThemeData(color: Colors.black),
   );
 }
