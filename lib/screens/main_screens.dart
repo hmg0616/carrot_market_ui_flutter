@@ -32,6 +32,8 @@ class _MainScreensState extends State<MainScreens> {
         backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed, // 3개 이상 item 표시할때 설정
         currentIndex: _selectedIndex, // 현재 선택된 인덱스
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.black54,
         onTap: (index) { // 사용자 클릭 시 이벤트
           setState(() {
             _selectedIndex = index;
