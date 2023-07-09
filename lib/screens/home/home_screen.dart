@@ -1,6 +1,8 @@
-import 'package:carrot_market_ui/theme.dart';
+import 'package:carrot_market_ui/models/product.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'components/product_item.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -40,7 +42,20 @@ class HomeScreen extends StatelessWidget {
             preferredSize: Size.fromHeight(0.5),
         ),
       ),
-      body: Container(),
+      body: ListView.separated( // 구분자가 있는 리스트뷰
+        separatorBuilder: (context, index) => const Divider( // 구분자
+          height: 0,
+          indent: 16, // 구분자 시작 위치
+          endIndent: 16, // 구분자 끝 위치
+          color: Colors.grey,
+        ),
+        itemBuilder: (context, index) {
+          return ProductItem(
+            product: productList[index]
+          );
+        },
+        itemCount: productList.length,
+      ),
     );
   }
 }
