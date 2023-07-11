@@ -23,11 +23,14 @@ class NeighborhoodLifeScreen extends StatelessWidget {
       body: ListView(
         children: [
           LifeHeader(),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 12.0),
-            child: LifeBody(
-              neighborhoodLife: neighborhoodLifeList[0]
-            ),
+          ...List.generate(
+            neighborhoodLifeList.length,
+            (index) => Padding(
+              padding: const EdgeInsets.only(bottom: 8.0),
+              child: LifeBody(
+                  neighborhoodLife: neighborhoodLifeList[index]
+              ),
+            )
           )
         ],
       ),
