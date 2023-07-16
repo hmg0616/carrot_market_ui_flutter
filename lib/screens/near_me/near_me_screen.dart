@@ -3,7 +3,9 @@ import 'package:carrot_market_ui/screens/component/appbar_preferred_size.dart';
 import 'package:carrot_market_ui/screens/near_me/components/round_border_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'components/bottom_title_icon.dart';
 import 'components/search_text_field.dart';
 
 class NearMeScreen extends StatelessWidget {
@@ -43,7 +45,42 @@ class NearMeScreen extends StatelessWidget {
           Divider(
             color: Colors.grey[100],
             thickness: 10.0,
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 16, top: 30),
+            child: Wrap( // 자식을 Row나 Column으로 배치할 수 있고, 배치할 공간이 부족해 지면 자식 위젯을 다음 줄에 배치함. 반응형 웹에도 활용 가능.
+              alignment: WrapAlignment.start,
+              spacing: 22.0, // 위젯간의 간격
+              runSpacing: 30, // 윗줄과 아랫줄 사이 간격
+              children: [
+                const ButtomTitleIcon(
+                  title: '구인구직',
+                  iconData: FontAwesomeIcons.user,
+                ),
+                const ButtomTitleIcon(
+                  title: '과외/클래스',
+                  iconData: FontAwesomeIcons.edit,
+                ),
+                const ButtomTitleIcon(
+                  title: '농수산물',
+                  iconData: FontAwesomeIcons.appleAlt,
+                ),
+                const ButtomTitleIcon(
+                  title: '부동산',
+                  iconData: FontAwesomeIcons.hotel,
+                ),
+                const ButtomTitleIcon(
+                  title: '중고차',
+                  iconData: FontAwesomeIcons.car,
+                ),
+                const ButtomTitleIcon(
+                  title: '전시/행사',
+                  iconData: FontAwesomeIcons.chessBishop,
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 50),
         ],
       ),
     );
