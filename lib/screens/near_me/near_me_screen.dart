@@ -1,4 +1,6 @@
+import 'package:carrot_market_ui/models/recommend_store.dart';
 import 'package:carrot_market_ui/screens/component/appbar_preferred_size.dart';
+import 'package:carrot_market_ui/screens/near_me/components/round_border_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -22,6 +24,25 @@ class NearMeScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: SearchTextField(),
+          ),
+          SizedBox(
+            height: 66, // 수평방향 스크롤은 높이를 지정해주어야함
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal, // 수평방향 스크롤
+              itemCount: searchKeyword.length,
+              itemBuilder: (context, index) {
+                return Center(
+                  child: RoundBorderText(
+                    title: searchKeyword[index],
+                    position: index
+                  ),
+                );
+              },
+            )
+          ),
+          Divider(
+            color: Colors.grey[100],
+            thickness: 10.0,
           )
         ],
       ),
