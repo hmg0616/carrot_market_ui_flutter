@@ -1,16 +1,19 @@
 # carrot_market_ui
 
-carrot_market_ui clone coding
+당근마켓 클론 코딩
 
-## Getting Started
+## 화면 UI
+### 홈페이지
+<img src="https://github.com/hmg0616/carrot_market_ui_flutter/blob/master/images/홈페이지.png" title="홈페이지"/>
 
-This project is a starting point for a Flutter application.
+### 동네생활
+<img src="https://github.com/hmg0616/carrot_market_ui_flutter/blob/master/images/동네생활.png" title="동네생활"/>
 
-A few resources to get you started if this is your first Flutter project:
+### 내근처
+<img src="https://github.com/hmg0616/carrot_market_ui_flutter/blob/master/images/내근처.png" title="내근처"/>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 채팅
+<img src="https://github.com/hmg0616/carrot_market_ui_flutter/blob/master/images/채팅.png" title="채팅"/>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 나의당근
+<img src="https://github.com/hmg0616/carrot_market_ui_flutter/blob/master/images/나의당근.png" title="나의당근"/>
